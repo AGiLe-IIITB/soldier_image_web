@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Image</title>
+    <style>
+        #image-container {
+            position: relative;
+            width: 100%; /* Ensure the container spans the entire width */
+        }
+        #satellite-image {
+            width: 50%; /* Make the image fill the container */
+            z-index: 1; /* Place the image below the buttons */
+        }
+        .button {
+            position: absolute;
+            border: none;
+            border-radius: 50%;
+            background-color: black; /* Change background color to black */
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            z-index: 2; /* Place the buttons above the image */
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="satellite-image" src="satellite-image.jpg" alt="Satellite Image">
+        <button class="button" style="top: 632px; left: 76px;" onclick="changeColor(this)"></button>
+        <button class="button" style="top: 635px; left: 150px;" onclick="changeColor(this)"></button>
+		<button class="button" style="top: 636px; left: 219px;" onclick="changeColor(this)"></button>
+        <button class="button" style="top: 636px; left: 290px;" onclick="changeColor(this)"></button>
+        <button class="button" style="top: 635px; left: 369px;" onclick="changeColor(this)"></button>
+        <button class="button" style="top: 634px; left: 440px;" onclick="changeColor(this)"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
